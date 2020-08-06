@@ -1,9 +1,14 @@
 import React from 'react'
+import LandingPage from './components/LandingPage'
+import GlobalStyle from './globalStyles/fonts'
+
+
 
 const App = () => {
   return (
     <div >
-          The basic empty template
+    <GlobalStyle />
+          <LandingPage />
     </div>
   )
 }
