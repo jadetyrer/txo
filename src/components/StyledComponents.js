@@ -4,7 +4,8 @@ import styled from 'styled-components'
 export const NavLogo = styled.img `
   width: 7em;
   height: 7em;
-  @media (max-width: 400px) {
+  margin-left: 1.5em;
+  @media (max-width: 420px) {
     width: 9em;
     height: 9em;
     margin-left: 1.5em
@@ -125,6 +126,10 @@ export const FooterLogo = styled.img `
 export const FooterLink = styled.div `
   display: flex;
   font-size: .8em;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 `
 export const LeftSection = styled.div `
   width: 45vw;
