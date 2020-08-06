@@ -1,9 +1,10 @@
 import React from 'react'
+import LandingPage from './components/LandingPage'
 
 const App = () => {
   return (
     <div >
-          The basic empty template
+          <LandingPage />
     </div>
   )
 }
