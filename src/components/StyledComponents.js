@@ -31,7 +31,6 @@ export const NavGroupDiv = styled.li `
     display: none;
   }
 `
-
 export const NavLink = styled.div `
   Font-size: .8em;
   Line-height: 1em;
@@ -44,13 +43,10 @@ export const ContactDiv = styled.div `
 `
 export const BurgerIcon = styled.div `
   display: none;
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 420px) {
     display: flex;
     width: 7em;
   }
-`
-export const BurgerLabel = styled.label `
-  width: 7em;
 `
 
 // Title styles

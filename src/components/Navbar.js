@@ -1,11 +1,12 @@
 import React from 'react';
-import {NavLogo, NavContainer, NavLink, NavGroupDiv, ContactDiv} from './StyledComponents';
+import {NavLogo, NavContainer, NavLink, NavGroupDiv, ContactDiv, BurgerIcon} from './StyledComponents';
 
 
 const Navbar = () => {
   return (
     <NavContainer>
       <NavLogo src="/txo_logo_2.svg" alt="txo logo"></NavLogo>
+      <BurgerIcon src="/menu.svg" alt="burger menu icon"></BurgerIcon>
       <ContactDiv>
       <NavGroupDiv>
         <NavLink style={{marginBottom: "10px"}}>ENQUIRIES</NavLink>
