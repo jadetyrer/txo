@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {CarouselContainer, Slider, InfoTitle, InfoContainer, ReadMoreButton, ReadMoreContainer} from './StyledComponents'
+import {CarouselContainer, Slider, InfoTitle, InfoContainer, ReadMoreButton, ReadMoreContainer, Empty, InfoDiv} from './StyledComponents'
 import SimpleImageSlider from "react-simple-image-slider";
 
 
@@ -47,10 +47,20 @@ const Carousel = () => {
     }
   }
 
+  let slideWidth = 0
+  let slideHeight = 0
+  if(window.innerWidth > 420) {
+    slideWidth = "90vw"
+    slideHeight = "110vw"
+  } else {
+    slideWidth = "320px"
+    slideHeight = "220px"
+  }
+
   return (
     <Slider>
       <CarouselContainer>
-        <SimpleImageSlider width="90vw" height="110vh" images={images} slideDuration={slideDur} onClickNav={handleChange} />
+        <SimpleImageSlider width={slideWidth} height={slideHeight} images={images} slideDuration={slideDur} onClickNav={handleChange} />
       </CarouselContainer>
       <InfoContainer>
         <InfoTitle>Name: {names[imgNameIndex]}</InfoTitle>
@@ -64,8 +74,8 @@ const Carousel = () => {
               <InfoTitle>Size: [{sizes[sizeIndex]}]sqft</InfoTitle>
             </InfoContainer>
             <InfoContainer>
-              <InfoTitle></InfoTitle>
-              <InfoTitle>{descriptions[descriptionIndex]}</InfoTitle>
+              <Empty></Empty>
+              <InfoDiv>{descriptions[descriptionIndex]}</InfoDiv>
             </InfoContainer>
           </div>
         )}

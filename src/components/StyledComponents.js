@@ -6,9 +6,9 @@ export const NavLogo = styled.img `
   height: 7em;
   margin-left: 1.5em;
   @media (max-width: 420px) {
-    width: 9em;
-    height: 9em;
-    margin-left: 1.5em
+    width: 80px;
+    height: 80px;
+    margin-left: 10px
   }
 `
 export const NavContainer = styled.div `
@@ -16,7 +16,8 @@ export const NavContainer = styled.div `
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
+  height: auto;
   background-color: #F9F5EE;
   z-index: 10;
   padding: 0;
@@ -41,36 +42,56 @@ export const ContactDiv = styled.div `
   display: flex;
   justify-content: flex-end;
 `
-export const BurgerIcon = styled.div `
+export const BurgerIcon = styled.img `
   display: none;
   @media only screen and (max-width: 420px) {
     display: flex;
-    width: 7em;
+    width: 40px;
+    height: auto;
+    margin-left: 14em;
   }
 `
 
 // Title styles
 export const TitleContainer = styled.div `
+  display: flex;
+  flex-direction: column;
   padding-top: 10vh;
+  width: 100vw;
+  height: auto;
 `
 export const MainHeading = styled.div `
+  display: flex;
   font-size: 6.3em;
   line-height: 1em;
   letter-spacing: -0.05em;
   font-weight: lighter;
   width: 80vw;
+  height: auto;
   padding: 0.8em 0em .5em 0.3em;
+  @media screen and (max-width: 420px) {
+    font-size: 50px;
+    width: 100vw;
+  }
 `
 export const SubContainer = styled.div `
+  display: flex;
+  flex-direction: column;
   width: 45vw;
+  height: auto;
   margin: 0em 0em 0em 35em;
+  @media screen and (max-width: 420px) {
+    width: 100vw;
+    height: auto;
+    margin: 10px;
+  }
 `
 export const SubTitle = styled.div  `
   font-size: 0.8em;
   margin-bottom: 1em
 `
 export const SubHeading = styled.div `
-  Font-size: 2em;
+  Font-size: 1.5em;
   letter-spacing: -0.045em;
   margin-bottom: 2em;
 `
@@ -87,15 +108,33 @@ export const InfoTitle = styled.div `
   font-size: 1.8em;
   letter-spacing: -0.045em;
   width: 45vw;
+  height: auto;
+  @media screen and (max-width: 420px) {
+    font-size: 13px;
+  }
 `
 export const InfoContainer = styled.div `
 display: flex;
 width: 90vw;
+height: auto;
 padding: 1em 0em 1em 0em;
 border-bottom: 2px solid #756355
 `
+export const Empty = styled.div `
+  @media screen and (max-width: 420px) {
+    width: 0;
+  }
+`
+export const InfoDiv = styled.div `
+  font-size: 13px;
+  letter-spacing: -0.045em;
+  @media screen and (max-width: 420px) {
+    width: 100vw
+  }
+`
 export const ReadMoreContainer = styled.div `
   width: 90vw;
+  height: auto;
 `
 export const ReadMoreButton = styled.button `
   background-color: #F9F5EE;
@@ -106,6 +145,9 @@ export const ReadMoreButton = styled.button `
   padding: 0px;
   margin-top: .8em;
   outline: none;
+  @media screen and (max-width: 420px) {
+    font-size: 15px;
+  }
   &:hover {
     opacity: 1;
     cursor: pointer;
@@ -115,6 +157,9 @@ export const ReadMoreButton = styled.button `
 export const FooterContainer = styled.div `
   display: flex;
   width: 90vw;
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+  }
 `
 export const FooterLogo = styled.img `
   height: 1.3em;
@@ -126,27 +171,45 @@ export const FooterLink = styled.div `
     cursor: pointer;
     text-decoration: underline;
   }
+  @media screen and (max-width: 420px) {
+    font-size: 8px;
+  }
 `
 export const LeftSection = styled.div `
   width: 45vw;
+  @media screen and (max-width: 420px) {
+    width: 100vw;
+  }
 `
 export const RightSection = styled.div `
   width: 45vw;
   display: flex;
   justify-content: space-around;
+  @media screen and (max-width: 420px) {
+    width: 100vw;
+  }
 `
 
 // form styles
 export const FormContainer = styled.div `
   width: 90vw;
+  @media and screen and (max-width: 420px) {
+    width: 100vw;
+  }
 `
 export const FormSub = styled.div `
   font-size: 1.5em;
   letter-spacing: -0.045em;
+  @media and screen and (max-width: 420px) {
+    font-size: 70px;
+  }
 `
 export const FormHeading = styled.div `
   font-size: 6.5em;
   letter-spacing: -0.045em;
+  @media screen and (max-width: 420px) {
+    font-size: 45px;
+  }
 `
 export const FormBlock = styled.div `
 
@@ -164,6 +227,9 @@ export const Input = styled.input `
     opacity: 0.3;
     letter-spacing: -0.045em;
   } 
+  @media screen and (max-width: 420px) {
+    font-size: 45px;
+  }
 `
 export const SubmitButton = styled.button `
   background-color: #F9F5EE;
@@ -177,5 +243,9 @@ export const SubmitButton = styled.button `
     opacity: 1;
     cursor: pointer;
     text-decoration: underline;
+  }
+  @media screen and (max-width: 420px) {
+    font-size: 20px;
+    margin-top: .8em
   }
 `

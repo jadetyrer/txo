@@ -14,9 +14,6 @@ const GlobalStyle = createGlobalStyle`
 	unicode-range: U+000D-FB04;
 }
 
-
-
-
 body {
   font-family: 'MessinaSansWeb';
 	font-weight: 400;
@@ -24,11 +21,8 @@ body {
 	line-height: 1.1;  
   background-color: #F9F5EE;
   color: #756355;
+	position: absolute;
 }
-a  {
-  text-decoration: none;
-  color: #999;
-} 
 `
 
 export default GlobalStyle
