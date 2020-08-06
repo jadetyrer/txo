@@ -49,7 +49,7 @@ const Carousel = () => {
 
   let slideWidth = 0
   let slideHeight = 0
-  if(window.innerWidth > 420) {
+  if(window.innerWidth > 520) {
     slideWidth = "90vw"
     slideHeight = "110vw"
   } else {
