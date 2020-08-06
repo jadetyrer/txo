@@ -159,6 +159,7 @@ export const FooterContainer = styled.div `
   width: 90vw;
   @media screen and (max-width: 420px) {
     flex-direction: column;
+    width: 90vw;
   }
 `
 export const FooterLogo = styled.img `
@@ -229,6 +230,7 @@ export const Input = styled.input `
   } 
   @media screen and (max-width: 420px) {
     font-size: 45px;
+    width: 100vw;
   }
 `
 export const SubmitButton = styled.button `
