@@ -15,7 +15,7 @@ const Carousel = () => {
   const sizes = ["4200", "5000"]
   const descriptions = ["Quam eos premqui tem cupta il inimet as rerum rent volum sitibus idunt la consenis ea nos doluptur, ipsapernates praeperrunte nobist peditaquis eum audaecto quam, susa consecae isto eum fugit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan ligula vel enim ullamcorper volutpat. Cras et orci convallis, blandit nisi ac, aliquam erat. Pellentesque eget mollis odio. Donec eleifend orci a felis aliquet, in tincidunt ligula semper."]
 
-  const slideDur = 2 
+  const slideDur = 1 
   
   const [imgNameIndex, setImgNameIndex] = useState(0)
   const [availIndex, setAvailIndex] = useState(0)
@@ -50,8 +50,9 @@ const Carousel = () => {
   let slideWidth = 0
   let slideHeight = 0
   if(window.innerWidth > 540) {
-    slideWidth = "90vw"
-    slideHeight = "110vw"
+    slideWidth = "1300px"
+    slideHeight = "700px"
+
   } else {
     slideWidth = "340px"
     slideHeight = "240px"
