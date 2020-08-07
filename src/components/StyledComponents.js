@@ -140,7 +140,7 @@ flex-direction: column;
 align-items: center;
 `
 export const CarouselContainer = styled.div `
-
+  
 `
 export const InfoTitle = styled.div `
   font-size: 1.8em;
