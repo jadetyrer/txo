@@ -42,16 +42,54 @@ export const ContactDiv = styled.div `
   display: flex;
   justify-content: flex-end;
 `
+export const BurgerNavContainer = styled.div `
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  background-color: #F9F5EE;
+  z-index: 10;
+  padding: 0;
+`
 export const BurgerIcon = styled.img `
   display: none;
   @media only screen and (max-width: 420px) {
     display: flex;
     width: 40px;
     height: auto;
-    margin-left: 14em;
+    padding-right: 20px;
   }
 `
+export const BurgerContactDiv = styled.div `
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+` 
+export const BurgerNavLink = styled.div `
 
+`
+export const BurgerNavGroupDiv = styled.div `
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 20px;
+  border-top: 2px solid #756355;
+  padding-top: 10px;
+`
+export const BurgerTop = styled.div `
+  display: flex;
+  justify-content: space-between; 
+`
+export const CrossIcon = styled.img `
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+`
 // Title styles
 export const TitleContainer = styled.div `
   display: flex;
