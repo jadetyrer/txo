@@ -56,7 +56,7 @@ export const BurgerNavContainer = styled.div `
 `
 export const BurgerIcon = styled.img `
   display: none;
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 750px) {
     display: flex;
     width: 40px;
     height: auto;
@@ -123,13 +123,18 @@ export const SubContainer = styled.div `
     height: auto;
     margin: 10px;
   }
+  @media screen and (max-width: 769px) {
+    width: 90vw;
+    height: auto;
+    margin: 10px;
+  }
 `
 export const SubTitle = styled.div  `
   font-size: 0.8em;
   margin-bottom: 1em
 `
 export const SubHeading = styled.div `
-  Font-size: 1.5em;
+  Font-size: 2em;
   letter-spacing: -0.045em;
   margin-bottom: 2em;
 `
@@ -148,6 +153,7 @@ export const InfoTitle = styled.div `
   width: 45vw;
   height: auto;
   @media screen and (max-width: 420px) {
+    width: 100vw;
     font-size: 13px;
   }
 `
@@ -159,15 +165,18 @@ padding: 1em 0em 1em 0em;
 border-bottom: 2px solid #756355
 `
 export const Empty = styled.div `
+  width: 45vw;
   @media screen and (max-width: 420px) {
     width: 0;
   }
 `
 export const InfoDiv = styled.div `
-  font-size: 13px;
+  font-size: 1.8em;
   letter-spacing: -0.045em;
+  width: 45vw;
   @media screen and (max-width: 420px) {
-    width: 100vw
+    width: 100vw;
+    font-size: 13px;
   }
 `
 export const ReadMoreContainer = styled.div `
@@ -202,6 +211,9 @@ export const FooterContainer = styled.div `
 `
 export const FooterLogo = styled.img `
   height: 1.3em;
+  @media screen and (max-width: 420px) {
+    padding: 10px;
+  }
 `
 export const FooterLink = styled.div `
   display: flex;
